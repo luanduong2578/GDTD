@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1A6978E-B0CD-49F0-9643-0B4E99D7A8D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GDBH</RootNamespace>
+    <AssemblyName>GDBH</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.16.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xNet">
+      <HintPath>C:\Users\LUA001\source\repos\xNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BH_Hanthe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BH_Hanthe.Designer.cs">
+      <DependentUpon>BH_Hanthe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BH_BaoGiam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BH_BaoGiam.Designer.cs">
+      <DependentUpon>BH_BaoGiam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BH_GioiTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BH_GioiTinh.Designer.cs">
+      <DependentUpon>BH_GioiTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BH_KCBBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BH_KCBBD.Designer.cs">
+      <DependentUpon>BH_KCBBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\BH_BaoGiam_DAO.cs" />
+    <Compile Include="DAO\BH_Hanthe_DAO.cs" />
+    <Compile Include="DAO\BH_GioiTinh_DAO.cs" />
+    <Compile Include="DAO\BH_KCBBD_DAO.cs" />
+    <Compile Include="DAO\BH_BHYT_DAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\BsKham_DAO.cs" />
+    <Compile Include="DAO\Get_Token.cs" />
+    <Compile Include="DAO\NG_Ngaygiuong_DA0.cs" />
+    <Compile Include="DAO\NG_Nhohon24h_DA0.cs" />
+    <Compile Include="DAO\NG_Nhohon4h_DA0.cs" />
+    <Compile Include="DAO\NG_Tinhtrangravien_DA0.cs" />
+    <Compile Include="DAO\Pttt_DAO.cs" />
+    <Compile Include="DAO\NG_Ngaygiuongdieutri_DA0.cs" />
+    <Compile Include="DAO\Load_DA0.cs" />
+    <Compile Include="DAO\BH_TraCuuThe.cs" />
+    <Compile Include="Fbskham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fbskham.Designer.cs">
+      <DependentUpon>Fbskham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmain.Designer.cs">
+      <DependentUpon>Fmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NG_Ngaygiuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NG_Ngaygiuong.Designer.cs">
+      <DependentUpon>NG_Ngaygiuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NG_Nhohon24h.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NG_Nhohon24h.Designer.cs">
+      <DependentUpon>NG_Nhohon24h.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NG_Tinhtrangravien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NG_Tinhtrangravien.Designer.cs">
+      <DependentUpon>NG_Tinhtrangravien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NG_Nhohon4h.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NG_Nhohon4h.Designer.cs">
+      <DependentUpon>NG_Nhohon4h.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NG_Ngaygiuongdieutri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NG_Ngaygiuongdieutri.Designer.cs">
+      <DependentUpon>NG_Ngaygiuongdieutri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fpttt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fpttt.Designer.cs">
+      <DependentUpon>Fpttt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BH_BHYT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BH_BHYT.Designer.cs">
+      <DependentUpon>BH_BHYT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BH_Hanthe.resx">
+      <DependentUpon>BH_Hanthe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BH_BaoGiam.resx">
+      <DependentUpon>BH_BaoGiam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BH_GioiTinh.resx">
+      <DependentUpon>BH_GioiTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BH_KCBBD.resx">
+      <DependentUpon>BH_KCBBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fbskham.resx">
+      <DependentUpon>Fbskham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fmain.resx">
+      <DependentUpon>Fmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NG_Ngaygiuong.resx">
+      <DependentUpon>NG_Ngaygiuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NG_Nhohon24h.resx">
+      <DependentUpon>NG_Nhohon24h.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NG_Tinhtrangravien.resx">
+      <DependentUpon>NG_Tinhtrangravien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NG_Nhohon4h.resx">
+      <DependentUpon>NG_Nhohon4h.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NG_Ngaygiuongdieutri.resx">
+      <DependentUpon>NG_Ngaygiuongdieutri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fpttt.resx">
+      <DependentUpon>Fpttt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BH_BHYT.resx">
+      <DependentUpon>BH_BHYT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMG\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
