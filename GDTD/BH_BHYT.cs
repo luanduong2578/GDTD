@@ -78,7 +78,7 @@ namespace GDBH
                 namsinh = r["NAMSINH"].ToString();
                                           
                 data = "{'maThe':'"+ mathe +"','hoTen':'"+ hoten +"','ngaySinh':'" + namsinh +"'}";
-                url = "https://egw.baohiemxahoi.gov.vn/api/egw/nhanLichSuKCB2018?token=" + accesstoken + "&id_token=" + tokenid + "&username=74001_BV&password=bcd3b3505865dd5966c0301ba9367705";
+                url = "https://egw.baohiemxahoi.gov.vn/api/egw/nhanLichSuKCB2018?token=" + accesstoken + "&id_token=" + tokenid + "&username=74001_BV&password=9039480057a6f5d7d1b0b1ef7012d51b";
                 jsontracuu = http.Post(url, data, "application/json").ToString();
                 BH_TraCuuThe jsontracuudata = JsonConvert.DeserializeObject<BH_TraCuuThe>(jsontracuu);
                 
@@ -111,7 +111,7 @@ namespace GDBH
                     accesstoken = txb_token.Text;
                     tokenid = txb_token_id.Text;
                     data = "{'maThe':'" + mathe + "','hoTen':'" + hoten + "','ngaySinh':'" + namsinh + "'}";
-                    url = "https://egw.baohiemxahoi.gov.vn/api/egw/nhanLichSuKCB2018?token=" + accesstoken + "&id_token=" + tokenid + "&username=74001_BV&password=bcd3b3505865dd5966c0301ba9367705";
+                    url = "https://egw.baohiemxahoi.gov.vn/api/egw/nhanLichSuKCB2018?token=" + accesstoken + "&id_token=" + tokenid + "&username=74001_BV&password=9039480057a6f5d7d1b0b1ef7012d51b";
                     jsontracuu = http.Post(url, data, "application/json").ToString();
                     jsontracuudata = JsonConvert.DeserializeObject<BH_TraCuuThe>(jsontracuu);
                     ghichu_tc = (jsontracuudata.GhiChu != null) ? jsontracuudata.GhiChu.Replace("'", "''") : null;
@@ -141,7 +141,7 @@ namespace GDBH
         {
 
             HttpRequest http = new HttpRequest();
-            string data = "{'username': '74001_BV', 'password':'bcd3b3505865dd5966c0301ba9367705'}";
+            string data = "{'username': '74001_BV', 'password':'9039480057a6f5d7d1b0b1ef7012d51b'}";
             string json = http.Post("https://egw.baohiemxahoi.gov.vn/api/token/take", data, "application/json").ToString();
             json = json.Replace("\"APIKey\":{", "\"APIKey\":[{");
             json = json.Replace("}}", "}]}");
