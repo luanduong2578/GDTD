@@ -24,3 +24,5 @@ D:\APP\GDTD\GDTD\obj\Debug\GDBH.BH_BaoGiam.resources
 D:\APP\GDTD\GDTD\obj\Debug\GDBH.NG_Ngaygiuongdieutri.resources
 D:\APP\GDTD\GDTD\obj\Debug\GDBH.BH_Hanthe.resources
 D:\APP\GDTD\GDTD\obj\Debug\GDTD.csprojResolveAssemblyReference.cache
+D:\APP\GDTD\GDTD\obj\Debug\GDBH.NG_IdGiuong.resources
+D:\APP\GDTD\GDTD\obj\Debug\GDBH.CK_CongKham.resources

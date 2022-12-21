@@ -15,7 +15,19 @@ namespace GDBH.DAO
             get { if (instance == null) instance = new Load_DA0(); return Load_DA0.instance; }
             private set { Load_DA0.instance = value; }
         }
+
         private Load_DA0() { }
+
+        public string Load_magiuong()
+        {
+            string id_guong = "";
+
+            string query = string.Format("select * from HSOFTDKBD.CDT_MAGIUONG");
+
+            id_guong = DataProvider.Instance.ExecuteScalar(query).ToString();
+            
+            return "(" + id_guong + ")";
+        }
 
         public string Load_ThangNam_HienTai()
         {

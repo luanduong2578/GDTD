@@ -85,7 +85,7 @@ namespace GDBH
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Nhohon4h
+            // NG_Nhohon4h
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,7 +95,7 @@ namespace GDBH
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "Nhohon4h";
+            this.Name = "NG_Nhohon4h";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Kiểm tra ngày giường - tình trạng ra viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

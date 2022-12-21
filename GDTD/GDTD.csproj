@@ -81,7 +81,14 @@
     <Compile Include="BH_KCBBD.Designer.cs">
       <DependentUpon>BH_KCBBD.cs</DependentUpon>
     </Compile>
+    <Compile Include="CK_CongKham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CK_CongKham.Designer.cs">
+      <DependentUpon>CK_CongKham.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\BH_BaoGiam_DAO.cs" />
+    <Compile Include="DAO\CongKham_DAO.cs" />
     <Compile Include="DAO\BH_Hanthe_DAO.cs" />
     <Compile Include="DAO\BH_GioiTinh_DAO.cs" />
     <Compile Include="DAO\BH_KCBBD_DAO.cs" />
@@ -120,6 +127,12 @@
     </Compile>
     <Compile Include="NG_Nhohon24h.Designer.cs">
       <DependentUpon>NG_Nhohon24h.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NG_Idgiuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NG_Idgiuong.Designer.cs">
+      <DependentUpon>NG_Idgiuong.cs</DependentUpon>
     </Compile>
     <Compile Include="NG_Tinhtrangravien.cs">
       <SubType>Form</SubType>
@@ -165,6 +178,9 @@
     <EmbeddedResource Include="BH_KCBBD.resx">
       <DependentUpon>BH_KCBBD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CK_CongKham.resx">
+      <DependentUpon>CK_CongKham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fbskham.resx">
       <DependentUpon>Fbskham.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NG_Nhohon24h.resx">
       <DependentUpon>NG_Nhohon24h.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NG_Idgiuong.resx">
+      <DependentUpon>NG_Idgiuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NG_Tinhtrangravien.resx">
       <DependentUpon>NG_Tinhtrangravien.cs</DependentUpon>

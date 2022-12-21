@@ -200,5 +200,22 @@ namespace GDBH
             else
                 ActiveChildForm("BH_Hanthe");
         }
+
+        private void danhMụcMãGiườngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void giáCôngKhámToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckExitForm("CK_CongKham"))
+            {
+                CK_CongKham f = new CK_CongKham();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+                ActiveChildForm("CK_CongKham");
+        }
     }
 }
